@@ -1,21 +1,11 @@
 package com.mycompany.app;
 
-/**
- * Hello world!
- */
-public class App
-{
-
-    private final String message = "Hello From Build Job";
-
-    public App() {}
+public class App {
+    public static String mainMessage() {
+        return "Hello World!";
+    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getMessage());
+        System.out.println(mainMessage());
     }
-
-    private final String getMessage() {
-        return message;
-    }
-
 }
