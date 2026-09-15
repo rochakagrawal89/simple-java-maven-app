@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+          maven 'maven-ci-server'
+     }
     stages {
         stage('Build') {
             steps {
