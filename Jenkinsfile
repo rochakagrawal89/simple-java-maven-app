@@ -3,6 +3,9 @@ pipeline {
     tools {
           maven 'maven-ci-server'
      }
+    parameters {
+          choice choices: ['dev', 'test', 'prod'], name: 'env'
+    }
     stages {
         stage('Build') {
             steps {
